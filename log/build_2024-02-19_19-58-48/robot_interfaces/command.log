@@ -1,0 +1,6 @@
+Invoking command in '/home/edipo/ros2_tfm/build/robot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/edipo/ros2_tfm/src/robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/edipo/ros2_tfm/install/robot_interfaces
+Invoked command in '/home/edipo/ros2_tfm/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/edipo/ros2_tfm/src/robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/edipo/ros2_tfm/install/robot_interfaces
+Invoking command in '/home/edipo/ros2_tfm/build/robot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/edipo/ros2_tfm/build/robot_interfaces -- -j12 -l12
+Invoked command in '/home/edipo/ros2_tfm/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/edipo/ros2_tfm/build/robot_interfaces -- -j12 -l12
+Invoking command in '/home/edipo/ros2_tfm/build/robot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/edipo/ros2_tfm/build/robot_interfaces
+Invoked command in '/home/edipo/ros2_tfm/build/robot_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/edipo/ros2_tfm/build/robot_interfaces

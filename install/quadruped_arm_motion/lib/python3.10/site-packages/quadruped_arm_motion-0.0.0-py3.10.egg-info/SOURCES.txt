@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info/PKG-INFO
+../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info/SOURCES.txt
+../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info/dependency_links.txt
+../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info/entry_points.txt
+../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info/requires.txt
+../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info/top_level.txt
+../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info/zip-safe
+quadruped_arm_motion/__init__.py
+quadruped_arm_motion/motor_control.py
+quadruped_arm_motion/motor_subscriber.py
+resource/quadruped_arm_motion
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

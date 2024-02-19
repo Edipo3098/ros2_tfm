@@ -1,0 +1,4 @@
+[console_scripts]
+mpu_publisher = mpu_pub.mpu_publisher:main
+mpu_subscriber = mpu_pub.mpu_subscriber:main
+

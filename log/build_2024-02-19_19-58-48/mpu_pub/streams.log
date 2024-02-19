@@ -1,0 +1,42 @@
+[1.085s] Invoking command in '/home/edipo/ros2_tfm/src/mpu_pub': AMENT_PREFIX_PATH=/home/edipo/ros2_tfm/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/edipo/ros2_tfm/install/robot_interfaces LD_LIBRARY_PATH=/home/edipo/ros2_tfm/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/edipo/ros2_tfm/build/mpu_pub/prefix_override:/home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages:/home/edipo/ros2_tfm/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mpu_pub build --build-base /home/edipo/ros2_tfm/build/mpu_pub/build install --record /home/edipo/ros2_tfm/build/mpu_pub/install.log --single-version-externally-managed
+[1.302s] running egg_info
+[1.302s] creating ../../build/mpu_pub/mpu_pub.egg-info
+[1.303s] writing ../../build/mpu_pub/mpu_pub.egg-info/PKG-INFO
+[1.303s] writing dependency_links to ../../build/mpu_pub/mpu_pub.egg-info/dependency_links.txt
+[1.303s] writing entry points to ../../build/mpu_pub/mpu_pub.egg-info/entry_points.txt
+[1.303s] writing requirements to ../../build/mpu_pub/mpu_pub.egg-info/requires.txt
+[1.303s] writing top-level names to ../../build/mpu_pub/mpu_pub.egg-info/top_level.txt
+[1.303s] writing manifest file '../../build/mpu_pub/mpu_pub.egg-info/SOURCES.txt'
+[1.305s] reading manifest file '../../build/mpu_pub/mpu_pub.egg-info/SOURCES.txt'
+[1.306s] adding license file 'LICENSE'
+[1.306s] writing manifest file '../../build/mpu_pub/mpu_pub.egg-info/SOURCES.txt'
+[1.306s] running build
+[1.306s] running build_py
+[1.306s] creating /home/edipo/ros2_tfm/build/mpu_pub/build
+[1.306s] creating /home/edipo/ros2_tfm/build/mpu_pub/build/lib
+[1.306s] creating /home/edipo/ros2_tfm/build/mpu_pub/build/lib/mpu_pub
+[1.306s] copying mpu_pub/__init__.py -> /home/edipo/ros2_tfm/build/mpu_pub/build/lib/mpu_pub
+[1.307s] copying mpu_pub/mpu_publisher.py -> /home/edipo/ros2_tfm/build/mpu_pub/build/lib/mpu_pub
+[1.307s] copying mpu_pub/mpu_subscriber.py -> /home/edipo/ros2_tfm/build/mpu_pub/build/lib/mpu_pub
+[1.307s] running install
+[1.307s] running install_lib
+[1.308s] creating /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub
+[1.308s] copying /home/edipo/ros2_tfm/build/mpu_pub/build/lib/mpu_pub/__init__.py -> /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub
+[1.308s] copying /home/edipo/ros2_tfm/build/mpu_pub/build/lib/mpu_pub/mpu_publisher.py -> /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub
+[1.308s] copying /home/edipo/ros2_tfm/build/mpu_pub/build/lib/mpu_pub/mpu_subscriber.py -> /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub
+[1.309s] byte-compiling /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub/__init__.py to __init__.cpython-310.pyc
+[1.310s] byte-compiling /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub/mpu_publisher.py to mpu_publisher.cpython-310.pyc
+[1.310s] byte-compiling /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub/mpu_subscriber.py to mpu_subscriber.cpython-310.pyc
+[1.311s] running install_data
+[1.311s] creating /home/edipo/ros2_tfm/install/mpu_pub/share/ament_index
+[1.311s] creating /home/edipo/ros2_tfm/install/mpu_pub/share/ament_index/resource_index
+[1.311s] creating /home/edipo/ros2_tfm/install/mpu_pub/share/ament_index/resource_index/packages
+[1.311s] copying resource/mpu_pub -> /home/edipo/ros2_tfm/install/mpu_pub/share/ament_index/resource_index/packages
+[1.311s] copying package.xml -> /home/edipo/ros2_tfm/install/mpu_pub/share/mpu_pub
+[1.311s] running install_egg_info
+[1.313s] Copying ../../build/mpu_pub/mpu_pub.egg-info to /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub-0.0.0-py3.10.egg-info
+[1.313s] running install_scripts
+[1.333s] Installing mpu_publisher script to /home/edipo/ros2_tfm/install/mpu_pub/lib/mpu_pub
+[1.333s] Installing mpu_subscriber script to /home/edipo/ros2_tfm/install/mpu_pub/lib/mpu_pub
+[1.333s] writing list of installed files to '/home/edipo/ros2_tfm/build/mpu_pub/install.log'
+[1.361s] Invoked command in '/home/edipo/ros2_tfm/src/mpu_pub' returned '0': AMENT_PREFIX_PATH=/home/edipo/ros2_tfm/install/robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/edipo/ros2_tfm/install/robot_interfaces LD_LIBRARY_PATH=/home/edipo/ros2_tfm/install/robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/edipo/ros2_tfm/build/mpu_pub/prefix_override:/home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages:/home/edipo/ros2_tfm/install/robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mpu_pub build --build-base /home/edipo/ros2_tfm/build/mpu_pub/build install --record /home/edipo/ros2_tfm/build/mpu_pub/install.log --single-version-externally-managed

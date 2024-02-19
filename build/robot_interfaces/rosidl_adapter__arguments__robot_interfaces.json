@@ -1,0 +1,7 @@
+{
+  "package_name": "robot_interfaces",
+  "non_idl_tuples": [
+    "/home/edipo/ros2_tfm/src/robot_interfaces:msg/Mpu.msg",
+    "/home/edipo/ros2_tfm/src/robot_interfaces:msg/Anglemotor.msg"
+  ]
+}

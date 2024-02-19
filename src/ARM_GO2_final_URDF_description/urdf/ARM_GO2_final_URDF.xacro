@@ -1,0 +1,762 @@
+<?xml version="1.0" ?>
+<robot name="ARM_GO2_final_URDF" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find ARM_GO2_final_URDF_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find ARM_GO2_final_URDF_description)/urdf/ARM_GO2_final_URDF.trans" />
+<xacro:include filename="$(find ARM_GO2_final_URDF_description)/urdf/ARM_GO2_final_URDF.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.006264809914653094 2.831447040369832e-07 0.054554437772028806" rpy="0 0 0"/>
+    <mass value="1.7572893193599466"/>
+    <inertia ixx="0.00198" iyy="0.003344" izz="0.002437" ixy="-0.0" iyz="-0.0" ixz="0.00025"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Soporte_motor_v2_1">
+  <inertial>
+    <origin xyz="2.5906360390237637e-14 -5.836208519864852e-18 -0.0605" rpy="0 0 0"/>
+    <mass value="0.01734899284375791"/>
+    <inertia ixx="4e-06" iyy="4e-06" izz="7e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.027 -0.0 -0.18755" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Soporte_motor_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.027 -0.0 -0.18755" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Soporte_motor_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Support_large_v7_v3_1">
+  <inertial>
+    <origin xyz="0.03074999999999744 -5.953570969552401e-17 -0.11754994763057225" rpy="0 0 0"/>
+    <mass value="0.04192656039544443"/>
+    <inertia ixx="6e-06" iyy="2.1e-05" izz="2.1e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.05875 -0.0 -0.2541" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Support_large_v7_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.05875 -0.0 -0.2541" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Support_large_v7_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Motor_rds_v4_1">
+  <inertial>
+    <origin xyz="0.005296502977488501 -0.0010000399165760057 0.1874518590617134" rpy="0 0 0"/>
+    <mass value="0.09213161109927968"/>
+    <inertia ixx="4.8e-05" iyy="6.2e-05" izz="3.2e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.034 -0.001 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Motor_rds_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.034 -0.001 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Motor_rds_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_1">
+  <inertial>
+    <origin xyz="-0.1341345683326049 -8.631204578797799e-15 4.996003610813204e-16" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="3e-06" iyy="2e-06" izz="2e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.13705 0.0 -0.19155" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.13705 0.0 -0.19155" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_2">
+  <inertial>
+    <origin xyz="-0.19296543166739535 -8.631204578797799e-15 -0.05400000000000041" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="3e-06" iyy="2e-06" izz="2e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.13705 0.0 -0.24555" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.13705 0.0 -0.24555" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Support_large_v2_1">
+  <inertial>
+    <origin xyz="-0.02524999999997199 -0.005499999999999998 -0.16870234025933428" rpy="0 0 0"/>
+    <mass value="0.054206344386477714"/>
+    <inertia ixx="1.1e-05" iyy="4.3e-05" izz="4.1e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0005 -0.0055 -0.3831" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Support_large_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0005 -0.0055 -0.3831" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Support_large_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Soporte_C_v4_1">
+  <inertial>
+    <origin xyz="0.021640396650296052 -0.0009604134034615012 0.23609765095839802" rpy="0 0 0"/>
+    <mass value="0.2181304161127906"/>
+    <inertia ixx="3.1e-05" iyy="6.3e-05" izz="7.1e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.04675 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Soporte_C_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.04675 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Soporte_C_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_200_v3_1">
+  <inertial>
+    <origin xyz="0.007010701296230014 0.019193257183108412 0.3495855339085094" rpy="0 0 0"/>
+    <mass value="0.45159244640247675"/>
+    <inertia ixx="0.001524" iyy="0.001578" izz="9.1e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.032095 0.020045 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/arm_200_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.032095 0.020045 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/arm_200_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Soporte_C_v4_2">
+  <inertial>
+    <origin xyz="1.47015112965318e-05 -0.019608468240292123 0.44807341685346747" rpy="0 0 0"/>
+    <mass value="0.2181304161127906"/>
+    <inertia ixx="3.1e-05" iyy="6.3e-05" izz="7.1e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.025099 -0.018733 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Soporte_C_v4_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.025099 -0.018733 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Soporte_C_v4_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Support_large_v7_v3_2">
+  <inertial>
+    <origin xyz="0.0014750981615900723 0.028403945163169304 -0.42758541372463965" rpy="0 0 0"/>
+    <mass value="0.04192656039544443"/>
+    <inertia ixx="6e-06" iyy="2.1e-05" izz="2.1e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.026169 0.029319 -0.894171" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Support_large_v7_v3_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.026169 0.029319 -0.894171" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Support_large_v7_v3_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Motor_rds_v4_2">
+  <inertial>
+    <origin xyz="0.0019906011390811024 -0.0019150947534066732 0.5054873929676461" rpy="0 0 0"/>
+    <mass value="0.09213161109927968"/>
+    <inertia ixx="4.8e-05" iyy="6.2e-05" izz="3.2e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.027388 -0.001 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Motor_rds_v4_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.027388 -0.001 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Motor_rds_v4_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_3">
+  <inertial>
+    <origin xyz="-0.5120013335058027 0.00991494516316068 -0.05069346609406755" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="3e-06" iyy="2e-06" izz="2e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.458392 0.00183 -0.560279" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.458392 0.00183 -0.560279" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_4">
+  <inertial>
+    <origin xyz="0.0025846664941973603 -5.483683932047852e-08 -4.660940675638159e-07" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="3e-06" iyy="2e-06" izz="2e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000806 0.000915 -0.509586" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000806 0.000915 -0.509586" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Support_large_v2_2">
+  <inertial>
+    <origin xyz="-0.02533490183843548 -0.005806054836830713 0.5319331936465986" rpy="0 0 0"/>
+    <mass value="0.054206344386477714"/>
+    <inertia ixx="1.1e-05" iyy="4.3e-05" izz="4.1e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.000109 -0.004891 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Support_large_v2_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.000109 -0.004891 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Support_large_v2_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Support_large_v7_v3_3">
+  <inertial>
+    <origin xyz="-0.030693901838407523 0.0006649451631718182 0.5491211201812934" rpy="0 0 0"/>
+    <mass value="0.04192656039544443"/>
+    <inertia ixx="2.1e-05" iyy="6e-06" izz="2.1e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.00525 0.00183 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Support_large_v7_v3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.00525 0.00183 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Support_large_v7_v3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Motor_rds_v4_3">
+  <inertial>
+    <origin xyz="-0.0261649417549835 -0.026740557814319204 0.5880229268735794" rpy="0 0 0"/>
+    <mass value="0.09213161109927968"/>
+    <inertia ixx="6.2e-05" iyy="4.8e-05" izz="3.2e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.000721 -0.026279 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Motor_rds_v4_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.000721 -0.026279 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Motor_rds_v4_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_5">
+  <inertial>
+    <origin xyz="-0.024334901838416134 0.5935363768305646 -0.02594393218813429" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="2e-06" iyy="3e-06" izz="2e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.001109 0.566786 -0.618065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.001109 0.566786 -0.618065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_6">
+  <inertial>
+    <origin xyz="9.816160110795447e-08 0.002415376830564562 6.781186701054764e-08" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="2e-06" iyy="3e-06" izz="2e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.025444 0.032665 -0.592121" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.025444 0.032665 -0.592121" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Pieza3_v8_1">
+  <inertial>
+    <origin xyz="-0.02848619410766786 0.02362800574643313 0.5944514347684775" rpy="0 0 0"/>
+    <mass value="0.5147838055219927"/>
+    <inertia ixx="0.000123" iyy="0.000196" izz="0.000203" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.08533 0.004" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Pieza3_v8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.08533 0.004" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Pieza3_v8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_200_v3_3">
+  <inertial>
+    <origin xyz="0.06766514195377554 -0.6871210548342539 0.02846483980178638" rpy="0 0 0"/>
+    <mass value="0.45159244640247675"/>
+    <inertia ixx="0.001524" iyy="9.1e-05" izz="0.001578" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.096154 -0.519456 -0.562022" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/arm_200_v3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.096154 -0.519456 -0.562022" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/arm_200_v3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Soporte_C_v4_3">
+  <inertial>
+    <origin xyz="-0.26766485783115823 0.3911330622156346 0.023233065121885055" rpy="0 0 0"/>
+    <mass value="0.2181304161127906"/>
+    <inertia ixx="3.1e-05" iyy="7.1e-05" izz="6.3e-05" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.239176 0.657286 -0.567498" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Soporte_C_v4_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.239176 0.657286 -0.567498" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Soporte_C_v4_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Support_large_v7_v3_4">
+  <inertial>
+    <origin xyz="-0.27677446118085974 0.5606918927937419 0.031808478525346184" rpy="0 0 0"/>
+    <mass value="0.04192656039544443"/>
+    <inertia ixx="6e-06" iyy="2.1e-05" izz="2.1e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.249176 0.845357 -0.558883" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Support_large_v7_v3_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.249176 0.845357 -0.558883" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Support_large_v7_v3_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Motor_rds_v4_4">
+  <inertial>
+    <origin xyz="-0.052894964158350856 -0.6330929138985437 0.29466551844192257" rpy="0 0 0"/>
+    <mass value="0.09213161109927968"/>
+    <inertia ixx="4.8e-05" iyy="3.2e-05" izz="6.2e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.026 -0.313026 -0.296026" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Motor_rds_v4_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.026 -0.313026 -0.296026" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Motor_rds_v4_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_7">
+  <inertial>
+    <origin xyz="0.5921069704865328 0.0035989451631610048 -0.3411655214746536" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="3e-06" iyy="2e-06" izz="2e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.59179 0.342764 -0.930857" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.59179 0.342764 -0.930857" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_8">
+  <inertial>
+    <origin xyz="-0.002415892848257453 -5.483683873652723e-08 4.785253459038685e-07" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="3e-06" iyy="2e-06" izz="2e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.053098 0.340165 -0.590691" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.053098 0.340165 -0.590691" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Wheel_v5_v4_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Support_large_v2_4">
+  <inertial>
+    <origin xyz="0.36541553881910954 0.035751285422504386 0.5906914785253466" rpy="0 0 0"/>
+    <mass value="0.054206344386477714"/>
+    <inertia ixx="1.1e-05" iyy="4.1e-05" izz="4.3e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.392264 0.398264 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Support_large_v2_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.392264 0.398264 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Support_large_v2_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Pieza4_modification_support_straight_v8_1">
+  <inertial>
+    <origin xyz="-0.03149669810481979 -0.04151471702152547 -0.5915756697368924" rpy="0 0 0"/>
+    <mass value="0.1745988578187049"/>
+    <inertia ixx="2.3e-05" iyy="6.9e-05" izz="5e-05" ixy="0.0" iyz="-0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.003 -0.005 -1.184242" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Pieza4_modification_support_straight_v8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.003 -0.005 -1.184242" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find ARM_GO2_final_URDF_description)/meshes/Pieza4_modification_support_straight_v8_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Z1" type="continuous">
+  <origin xyz="-0.027 0.0 0.18755" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Soporte_motor_v2_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Rigid 2" type="fixed">
+  <origin xyz="-0.03175 0.0 0.06655" rpy="0 0 0"/>
+  <parent link="Soporte_motor_v2_1"/>
+  <child link="Support_large_v7_v3_1"/>
+</joint>
+
+<joint name="Rigid 3" type="fixed">
+  <origin xyz="0.02475 0.001 -0.2701" rpy="0 0 0"/>
+  <parent link="Support_large_v7_v3_1"/>
+  <child link="Motor_rds_v4_1"/>
+</joint>
+
+<joint name="Z2" type="continuous">
+  <origin xyz="0.17105 -0.001 0.20755" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_1"/>
+  <child link="Wheel_v5_v4_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="Rigid 5" type="fixed">
+  <origin xyz="0.17105 -0.001 0.26155" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_1"/>
+  <child link="Wheel_v5_v4_2"/>
+</joint>
+
+<joint name="Rigid 6" type="fixed">
+  <origin xyz="-0.13755 0.0055 0.19155" rpy="0 0 0"/>
+  <parent link="Wheel_v5_v4_1"/>
+  <child link="Support_large_v2_1"/>
+</joint>
+
+<joint name="Rigid 7" type="fixed">
+  <origin xyz="-0.04625 -0.0055 -0.3831" rpy="0 0 0"/>
+  <parent link="Support_large_v2_1"/>
+  <child link="Soporte_C_v4_1"/>
+</joint>
+
+<joint name="Rigid 8" type="fixed">
+  <origin xyz="0.014655 -0.020045 -0.0" rpy="0 0 0"/>
+  <parent link="Soporte_C_v4_1"/>
+  <child link="arm_200_v3_1"/>
+</joint>
+
+<joint name="Rigid 9" type="fixed">
+  <origin xyz="0.006996 0.038778 0.0" rpy="0 0 0"/>
+  <parent link="arm_200_v3_1"/>
+  <child link="Soporte_C_v4_2"/>
+</joint>
+
+<joint name="Rigid 10" type="fixed">
+  <origin xyz="-0.00107 -0.048052 0.894171" rpy="0 0 0"/>
+  <parent link="Soporte_C_v4_2"/>
+  <child link="Support_large_v7_v3_2"/>
+</joint>
+
+<joint name="Rigid 11" type="fixed">
+  <origin xyz="-0.001219 0.030319 -0.910171" rpy="0 0 0"/>
+  <parent link="Support_large_v7_v3_2"/>
+  <child link="Motor_rds_v4_2"/>
+</joint>
+
+<joint name="Rigid 12" type="fixed">
+  <origin xyz="0.48578 -0.00283 0.576279" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_2"/>
+  <child link="Wheel_v5_v4_3"/>
+</joint>
+
+<joint name="Z3" type="continuous">
+  <origin xyz="0.028194 -0.001915 0.525586" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_2"/>
+  <child link="Wheel_v5_v4_4"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Rigid 14" type="fixed">
+  <origin xyz="-0.000915 0.005806 -0.509586" rpy="0 0 0"/>
+  <parent link="Wheel_v5_v4_4"/>
+  <child link="Support_large_v2_2"/>
+</joint>
+
+<joint name="Rigid 15" type="fixed">
+  <origin xyz="0.005359 -0.006721 0.0" rpy="0 0 0"/>
+  <parent link="Support_large_v2_2"/>
+  <child link="Support_large_v7_v3_3"/>
+</joint>
+
+<joint name="Rigid 16" type="fixed">
+  <origin xyz="-0.004529 0.028109 -0.016" rpy="0 0 0"/>
+  <parent link="Support_large_v7_v3_3"/>
+  <child link="Motor_rds_v4_3"/>
+</joint>
+
+<joint name="Rigid 17" type="fixed">
+  <origin xyz="-0.00183 -0.593065 0.634065" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_3"/>
+  <child link="Wheel_v5_v4_5"/>
+</joint>
+
+<joint name="Z4" type="continuous">
+  <origin xyz="-0.026165 -0.058944 0.608121" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_3"/>
+  <child link="Wheel_v5_v4_6"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="Rigid 26" type="fixed">
+  <origin xyz="-0.003 -0.09033 -1.188242" rpy="0 0 0"/>
+  <parent link="Pieza4_modification_support_straight_v8_1"/>
+  <child link="Pieza3_v8_1"/>
+</joint>
+
+<joint name="Rigid 27" type="fixed">
+  <origin xyz="-0.096154 0.604786 0.566022" rpy="0 0 0"/>
+  <parent link="Pieza3_v8_1"/>
+  <child link="arm_200_v3_3"/>
+</joint>
+
+<joint name="Rigid 28" type="fixed">
+  <origin xyz="0.33533 -1.176742 0.005476" rpy="0 0 0"/>
+  <parent link="arm_200_v3_3"/>
+  <child link="Soporte_C_v4_3"/>
+</joint>
+
+<joint name="Rigid 29" type="fixed">
+  <origin xyz="0.01 -0.188071 -0.008615" rpy="0 0 0"/>
+  <parent link="Soporte_C_v4_3"/>
+  <child link="Support_large_v7_v3_4"/>
+</joint>
+
+<joint name="Rigid 30" type="fixed">
+  <origin xyz="-0.223176 1.158383 -0.262857" rpy="0 0 0"/>
+  <parent link="Support_large_v7_v3_4"/>
+  <child link="Motor_rds_v4_4"/>
+</joint>
+
+<joint name="Rigid 31" type="fixed">
+  <origin xyz="-0.61779 -0.65579 0.634831" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_4"/>
+  <child link="Wheel_v5_v4_7"/>
+</joint>
+
+<joint name="Z5" type="continuous">
+  <origin xyz="-0.079098 -0.653191 0.294665" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_4"/>
+  <child link="Wheel_v5_v4_8"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Rigid 33" type="fixed">
+  <origin xyz="-0.339166 -0.058099 -0.590691" rpy="0 0 0"/>
+  <parent link="Wheel_v5_v4_8"/>
+  <child link="Support_large_v2_4"/>
+</joint>
+
+<joint name="Rigid 34" type="fixed">
+  <origin xyz="0.028444 0.037665 0.592121" rpy="0 0 0"/>
+  <parent link="Wheel_v5_v4_6"/>
+  <child link="Pieza4_modification_support_straight_v8_1"/>
+</joint>
+
+</robot>

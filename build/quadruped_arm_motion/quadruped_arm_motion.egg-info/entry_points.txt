@@ -1,0 +1,4 @@
+[console_scripts]
+motor_control = quadruped_arm_motion.motor_control:main
+motor_subscriber = quadruped_arm_motion.motor_subscriber:main
+

@@ -1,0 +1,979 @@
+<?xml version="1.0" ?>
+<robot name="GO2_ARM" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find GO2_ARM_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find GO2_ARM_description)/urdf/GO2_ARM.trans" />
+<xacro:include filename="$(find GO2_ARM_description)/urdf/GO2_ARM.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.006264809914653094 2.831447040369832e-07 0.054554437772028806" rpy="0 0 0"/>
+    <mass value="1.7572893193599466"/>
+    <inertia ixx="0.00198" iyy="0.003344" izz="0.002437" ixy="-0.0" iyz="-0.0" ixz="0.00025"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Soporte_motor_v2_1">
+  <inertial>
+    <origin xyz="2.5906360390237637e-14 -5.836208519864852e-18 -0.0605" rpy="0 0 0"/>
+    <mass value="0.01734899284375791"/>
+    <inertia ixx="4e-06" iyy="4e-06" izz="7e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.027 -0.0 -0.18755" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Soporte_motor_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.027 -0.0 -0.18755" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Soporte_motor_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Support_large_v7_v3_1">
+  <inertial>
+    <origin xyz="0.03074999999999744 -5.953570969552401e-17 -0.11754994763057225" rpy="0 0 0"/>
+    <mass value="0.04192656039544443"/>
+    <inertia ixx="6e-06" iyy="2.1e-05" izz="2.1e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.05875 -0.0 -0.2541" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v7_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.05875 -0.0 -0.2541" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v7_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Motor_rds_v4_1">
+  <inertial>
+    <origin xyz="0.005296502977488501 -0.0010000399165760057 0.1874518590617134" rpy="0 0 0"/>
+    <mass value="0.09213161109927968"/>
+    <inertia ixx="4.8e-05" iyy="6.2e-05" izz="3.2e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.034 -0.001 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Motor_rds_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.034 -0.001 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Motor_rds_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_1">
+  <inertial>
+    <origin xyz="-0.1341345683326049 -8.631204578797799e-15 4.996003610813204e-16" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="3e-06" iyy="2e-06" izz="2e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.13705 0.0 -0.19155" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.13705 0.0 -0.19155" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_2">
+  <inertial>
+    <origin xyz="-0.19296543166739535 -8.631204578797799e-15 -0.05400000000000041" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="3e-06" iyy="2e-06" izz="2e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.13705 0.0 -0.24555" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.13705 0.0 -0.24555" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Support_large_v2_1">
+  <inertial>
+    <origin xyz="-0.02524999999997199 -0.005499999999999998 -0.16870234025933428" rpy="0 0 0"/>
+    <mass value="0.054206344386477714"/>
+    <inertia ixx="1.1e-05" iyy="4.3e-05" izz="4.1e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0005 -0.0055 -0.3831" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0005 -0.0055 -0.3831" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="pieza_perfil_v2_1">
+  <inertial>
+    <origin xyz="0.020978893536534843 -0.01125174537699027 0.24079001598240235" rpy="0 0 0"/>
+    <mass value="0.019056786795894246"/>
+    <inertia ixx="3e-06" iyy="7e-06" izz="4e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.04675 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/pieza_perfil_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.04675 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/pieza_perfil_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="pieza_perfil_v2_2">
+  <inertial>
+    <origin xyz="-0.016228893536534846 0.011251745376990332 0.015704015982402314" rpy="0 0 0"/>
+    <mass value="0.019056786795894246"/>
+    <inertia ixx="3e-06" iyy="7e-06" izz="4e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0095 -0.0 -0.225086" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/pieza_perfil_v2_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0095 -0.0 -0.225086" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/pieza_perfil_v2_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_300_v1_1">
+  <inertial>
+    <origin xyz="0.023250000197981586 0.015000000751749273 -0.09058546609793194" rpy="0 0 0"/>
+    <mass value="0.6773886696037144"/>
+    <inertia ixx="0.005109" iyy="0.005189" izz="0.000137" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.049 0.017 -0.471671" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/arm_300_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.049 0.017 -0.471671" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/arm_300_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="pieza_perfil_v2_4">
+  <inertial>
+    <origin xyz="-0.008021106463465145 -0.01649825464300968 -0.09178994817053665" rpy="0 0 0"/>
+    <mass value="0.019056786795894246"/>
+    <inertia ixx="3e-06" iyy="7e-06" izz="4e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.01775 -0.02375 -0.612171" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/pieza_perfil_v2_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.01775 -0.02375 -0.612171" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/pieza_perfil_v2_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="pieza_perfil_v2_3">
+  <inertial>
+    <origin xyz="0.016271106463465138 -0.01125174539699016 -0.01570494817053658" rpy="0 0 0"/>
+    <mass value="0.019056786795894246"/>
+    <inertia ixx="3e-06" iyy="7e-06" izz="4e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.042 0.004 -0.536086" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/pieza_perfil_v2_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.042 0.004 -0.536086" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/pieza_perfil_v2_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Support_large_v7_v3_5">
+  <inertial>
+    <origin xyz="-0.023000000000002536 0.016499999980000023 0.5445855862753606" rpy="0 0 0"/>
+    <mass value="0.04192656039544443"/>
+    <inertia ixx="6e-06" iyy="2.1e-05" izz="2.1e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0025 0.0205 0.001" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v7_v3_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0025 0.0205 0.001" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v7_v3_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Motor_rds_v4_5">
+  <inertial>
+    <origin xyz="0.05079650297748874 -0.005000040080620474 0.5944873929676463" rpy="0 0 0"/>
+    <mass value="0.09213161109927968"/>
+    <inertia ixx="4.8e-05" iyy="6.2e-05" izz="3.2e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.077 -0.001 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Motor_rds_v4_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.077 -0.001 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Motor_rds_v4_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_9">
+  <inertial>
+    <origin xyz="-0.6000014316673951 0.003999999835946816 -0.05150046609406733" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="3e-06" iyy="2e-06" izz="2e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.546586 0.008 -0.650086" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.546586 0.008 -0.650086" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_10">
+  <inertial>
+    <origin xyz="-0.00041543166739499903 -1.6405302116773157e-10 -4.66094067230749e-07" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="3e-06" iyy="2e-06" izz="2e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.003 0.004 -0.598586" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_10.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.003 0.004 -0.598586" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_10.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Support_large_v2_5">
+  <inertial>
+    <origin xyz="-0.025249999999971767 -0.005000000164044402 0.6214331936465988" rpy="0 0 0"/>
+    <mass value="0.054206344386477714"/>
+    <inertia ixx="1.1e-05" iyy="4.3e-05" izz="4.1e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.001 -0.001 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v2_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.001 -0.001 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v2_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Support_large_v7_v3_6">
+  <inertial>
+    <origin xyz="0.021500000000000255 -0.004250000164046958 0.6386211201812937" rpy="0 0 0"/>
+    <mass value="0.04192656039544443"/>
+    <inertia ixx="2.1e-05" iyy="6e-06" izz="2.1e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.04775 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v7_v3_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.04775 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v7_v3_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Motor_rds_v4_6">
+  <inertial>
+    <origin xyz="-0.018749960083423795 0.027546502813444063 0.6895229268735792" rpy="0 0 0"/>
+    <mass value="0.09213161109927968"/>
+    <inertia ixx="6.2e-05" iyy="4.8e-05" izz="3.2e-05" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0075 0.0325 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Motor_rds_v4_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0075 0.0325 0.016" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Motor_rds_v4_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_15">
+  <inertial>
+    <origin xyz="7.528699885739343e-16 0.0025845681685603035 6.78118743380196e-08" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="2e-06" iyy="3e-06" izz="2e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02625 -0.02125 -0.693621" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_15.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02625 -0.02125 -0.693621" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_15.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_16">
+  <inertial>
+    <origin xyz="-2.983724378680108e-16 -0.00258456849664937 0.006000067811874232" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="2e-06" iyy="3e-06" izz="2e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02625 0.02975 -0.693621" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_16.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02625 0.02975 -0.693621" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_16.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Support_large_v2_8">
+  <inertial>
+    <origin xyz="-0.6906209999999998 -0.05250000016407242 -0.0034022724474690458" rpy="0 0 0"/>
+    <mass value="0.054206344386477714"/>
+    <inertia ixx="4.3e-05" iyy="1.1e-05" izz="4.1e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.664371 -0.0475 -0.719871" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v2_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.664371 -0.0475 -0.719871" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v2_8.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Pieza_rotational_v2_1">
+  <inertial>
+    <origin xyz="-0.009999999999999658 0.001965957721534059 0.7226537513227909" rpy="0 0 0"/>
+    <mass value="0.04177191173295743"/>
+    <inertia ixx="2e-05" iyy="1.3e-05" izz="3e-05" ixy="0.0" iyz="1e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.01625 -0.0215 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Pieza_rotational_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.01625 -0.0215 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Pieza_rotational_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_250_v1_1">
+  <inertial>
+    <origin xyz="-0.004249999782017802 0.19899999983273414 -0.7276563990339506" rpy="0 0 0"/>
+    <mass value="0.5644905580030953"/>
+    <inertia ixx="0.002964" iyy="0.000114" izz="0.003031" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.021 0.0465 -1.442813" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/arm_250_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.021 0.0465 -1.442813" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/arm_250_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="pieza_perfil_v2_5">
+  <inertial>
+    <origin xyz="-0.15252110644346462 -0.4648614822405144 0.01599785636080797" rpy="0 0 0"/>
+    <mass value="0.019056786795894246"/>
+    <inertia ixx="3e-06" iyy="4e-06" izz="7e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.12725 -0.732657 -0.689907" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/pieza_perfil_v2_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.12725 -0.732657 -0.689907" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/pieza_perfil_v2_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="pieza_perfil_v2_6">
+  <inertial>
+    <origin xyz="0.01627110648346547 -0.01570448224051374 0.011251347114788257" rpy="0 0 0"/>
+    <mass value="0.019056786795894246"/>
+    <inertia ixx="3e-06" iyy="4e-06" izz="7e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0415 -0.2835 -0.717157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/pieza_perfil_v2_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0415 -0.2835 -0.717157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/pieza_perfil_v2_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Support_large_v7_v3_7">
+  <inertial>
+    <origin xyz="0.022500000019997867 0.7176570522053833 -0.27900039826220147" rpy="0 0 0"/>
+    <mass value="0.04192656039544443"/>
+    <inertia ixx="6e-06" iyy="2.1e-05" izz="2.1e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.048 0.426657 -0.996157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v7_v3_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.048 0.426657 -0.996157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v7_v3_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Motor_rds_v4_7">
+  <inertial>
+    <origin xyz="0.002796502997489101 0.7590588588976688 -0.299000358345626" rpy="0 0 0"/>
+    <mass value="0.09213161109927968"/>
+    <inertia ixx="4.8e-05" iyy="3.2e-05" izz="6.2e-05" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.029 0.433157 -1.016157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Motor_rds_v4_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.029 0.433157 -1.016157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Motor_rds_v4_7.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_17">
+  <inertial>
+    <origin xyz="-0.000415431647394784 -1.640454438955885e-10 -3.982621938902753e-07" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="3e-06" iyy="2e-06" izz="2e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.003 -0.346 -0.717157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_17.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.003 -0.346 -0.717157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_17.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_18">
+  <inertial>
+    <origin xyz="-0.7185724316473948 -0.05350000016404516 0.3459996017378065" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="3e-06" iyy="2e-06" izz="2e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.665157 -0.3975 -0.371157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_18.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.665157 -0.3975 -0.371157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_18.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Support_large_v2_9">
+  <inertial>
+    <origin xyz="-0.3722499999800275 0.7370046595766205 0.0049996017377977875" rpy="0 0 0"/>
+    <mass value="0.054206344386477714"/>
+    <inertia ixx="1.1e-05" iyy="4.1e-05" izz="4.3e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.346 0.368157 -0.712157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v2_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.346 0.368157 -0.712157" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Support_large_v2_9.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Clamp_base_v1_1">
+  <inertial>
+    <origin xyz="-0.03148447756144981 0.7226017499510347 0.36454843864461683" rpy="0 0 0"/>
+    <mass value="0.01649026552204749"/>
+    <inertia ixx="4e-06" iyy="6e-06" izz="4e-06" ixy="-0.0" iyz="1e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.00525 0.338121 -0.338121" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Clamp_base_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.00525 0.338121 -0.338121" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Clamp_base_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Claw_base2_v3_1">
+  <inertial>
+    <origin xyz="0.4029793224926489 0.05340139584058995 -0.6768176759636104" rpy="0 0 0"/>
+    <mass value="0.05424946529768771"/>
+    <inertia ixx="5e-06" iyy="1.2e-05" izz="1.7e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.429164 -0.352851 -1.368089" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Claw_base2_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.429164 -0.352851 -1.368089" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Claw_base2_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Wheel_v5_v4_19">
+  <inertial>
+    <origin xyz="4.985186393604429e-07 -4.665612249876716e-07 0.002584892368994507" rpy="0 0 0"/>
+    <mass value="0.023620918460337568"/>
+    <inertia ixx="2e-06" iyy="2e-06" izz="3e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.013784 -0.407786 -0.693271" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_19.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.013784 -0.407786 -0.693271" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Wheel_v5_v4_19.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Claw_p2_v2_1">
+  <inertial>
+    <origin xyz="0.020328587133280604 0.7082458053075269 -0.40078567596361037" rpy="0 0 0"/>
+    <mass value="0.020931948858331065"/>
+    <inertia ixx="3e-06" iyy="2e-06" izz="5e-06" ixy="-2e-06" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.024567 0.290486 -1.101057" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Claw_p2_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.024567 0.290486 -1.101057" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Claw_p2_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Claw_finger2_v2_1">
+  <inertial>
+    <origin xyz="0.41288639924211934 0.25535057686769813 0.7047713240363898" rpy="0 0 0"/>
+    <mass value="0.007667663582271117"/>
+    <inertia ixx="1e-06" iyy="0.0" izz="1e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.405477 -0.210919 0.004" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Claw_finger2_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.405477 -0.210919 0.004" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find GO2_ARM_description)/meshes/Claw_finger2_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Z1" type="continuous">
+  <origin xyz="-0.027 0.0 0.18755" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Soporte_motor_v2_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Rigid 2" type="fixed">
+  <origin xyz="-0.03175 0.0 0.06655" rpy="0 0 0"/>
+  <parent link="Soporte_motor_v2_1"/>
+  <child link="Support_large_v7_v3_1"/>
+</joint>
+
+<joint name="Rigid 3" type="fixed">
+  <origin xyz="0.02475 0.001 -0.2701" rpy="0 0 0"/>
+  <parent link="Support_large_v7_v3_1"/>
+  <child link="Motor_rds_v4_1"/>
+</joint>
+
+<joint name="Z2" type="continuous">
+  <origin xyz="0.17105 -0.001 0.20755" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_1"/>
+  <child link="Wheel_v5_v4_1"/>
+  <axis xyz="1.0 0.0 -0.0"/>
+</joint>
+
+<joint name="Rigid 5" type="fixed">
+  <origin xyz="0.17105 -0.001 0.26155" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_1"/>
+  <child link="Wheel_v5_v4_2"/>
+</joint>
+
+<joint name="Rigid 6" type="fixed">
+  <origin xyz="-0.13755 0.0055 0.19155" rpy="0 0 0"/>
+  <parent link="Wheel_v5_v4_1"/>
+  <child link="Support_large_v2_1"/>
+</joint>
+
+<joint name="Rigid 35" type="fixed">
+  <origin xyz="-0.04625 -0.0055 -0.3831" rpy="0 0 0"/>
+  <parent link="Support_large_v2_1"/>
+  <child link="pieza_perfil_v2_1"/>
+</joint>
+
+<joint name="Rigid 36" type="fixed">
+  <origin xyz="0.03725 0.0 0.225086" rpy="0 0 0"/>
+  <parent link="pieza_perfil_v2_1"/>
+  <child link="pieza_perfil_v2_2"/>
+</joint>
+
+<joint name="Rigid 37" type="fixed">
+  <origin xyz="-0.00225 -0.017 0.471671" rpy="0 0 0"/>
+  <parent link="pieza_perfil_v2_1"/>
+  <child link="arm_300_v1_1"/>
+</joint>
+
+<joint name="Rigid 38" type="fixed">
+  <origin xyz="0.03125 0.04075 0.1405" rpy="0 0 0"/>
+  <parent link="arm_300_v1_1"/>
+  <child link="pieza_perfil_v2_4"/>
+</joint>
+
+<joint name="Rigid 39" type="fixed">
+  <origin xyz="-0.02425 -0.02775 -0.076085" rpy="0 0 0"/>
+  <parent link="pieza_perfil_v2_4"/>
+  <child link="pieza_perfil_v2_3"/>
+</joint>
+
+<joint name="Rigid 40" type="fixed">
+  <origin xyz="0.0395 -0.0165 -0.537086" rpy="0 0 0"/>
+  <parent link="pieza_perfil_v2_3"/>
+  <child link="Support_large_v7_v3_5"/>
+</joint>
+
+<joint name="Rigid 41" type="fixed">
+  <origin xyz="-0.0745 0.0215 -0.015" rpy="0 0 0"/>
+  <parent link="Support_large_v7_v3_5"/>
+  <child link="Motor_rds_v4_5"/>
+</joint>
+
+<joint name="Rigid 42" type="fixed">
+  <origin xyz="0.623586 -0.009 0.666086" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_5"/>
+  <child link="Wheel_v5_v4_9"/>
+</joint>
+
+<joint name="Z3" type="continuous">
+  <origin xyz="0.08 -0.005 0.614586" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_5"/>
+  <child link="Wheel_v5_v4_10"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Rigid 44" type="fixed">
+  <origin xyz="-0.004 0.005 -0.598586" rpy="0 0 0"/>
+  <parent link="Wheel_v5_v4_10"/>
+  <child link="Support_large_v2_5"/>
+</joint>
+
+<joint name="Rigid 45" type="fixed">
+  <origin xyz="-0.04675 -0.001 0.0" rpy="0 0 0"/>
+  <parent link="Support_large_v2_5"/>
+  <child link="Support_large_v7_v3_6"/>
+</joint>
+
+<joint name="Rigid 46" type="fixed">
+  <origin xyz="0.04025 -0.0325 -0.016" rpy="0 0 0"/>
+  <parent link="Support_large_v7_v3_6"/>
+  <child link="Motor_rds_v4_6"/>
+</joint>
+
+<joint name="Z4" type="continuous">
+  <origin xyz="-0.01875 0.05375 0.709621" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_6"/>
+  <child link="Wheel_v5_v4_15"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rigid 64" type="fixed">
+  <origin xyz="-0.01875 0.00275 0.709621" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_6"/>
+  <child link="Wheel_v5_v4_16"/>
+</joint>
+
+<joint name="Rigid 65" type="fixed">
+  <origin xyz="0.690621 0.02625 0.02625" rpy="0 0 0"/>
+  <parent link="Wheel_v5_v4_15"/>
+  <child link="Support_large_v2_8"/>
+</joint>
+
+<joint name="Rigid 66" type="fixed">
+  <origin xyz="-0.680621 -0.026 -0.719871" rpy="0 0 0"/>
+  <parent link="Support_large_v2_8"/>
+  <child link="Pieza_rotational_v2_1"/>
+</joint>
+
+<joint name="Rigid 67" type="fixed">
+  <origin xyz="-0.00475 -0.068 1.442813" rpy="0 0 0"/>
+  <parent link="Pieza_rotational_v2_1"/>
+  <child link="arm_250_v1_1"/>
+</joint>
+
+<joint name="Rigid 68" type="fixed">
+  <origin xyz="0.14825 0.779157 -0.752906" rpy="0 0 0"/>
+  <parent link="arm_250_v1_1"/>
+  <child link="pieza_perfil_v2_5"/>
+</joint>
+
+<joint name="Rigid 69" type="fixed">
+  <origin xyz="-0.16875 -0.449157 0.02725" rpy="0 0 0"/>
+  <parent link="pieza_perfil_v2_5"/>
+  <child link="pieza_perfil_v2_6"/>
+</joint>
+
+<joint name="Rigid 70" type="fixed">
+  <origin xyz="-0.17525 -1.159314 0.30625" rpy="0 0 0"/>
+  <parent link="pieza_perfil_v2_5"/>
+  <child link="Support_large_v7_v3_7"/>
+</joint>
+
+<joint name="Rigid 71" type="fixed">
+  <origin xyz="0.019 -0.0065 0.02" rpy="0 0 0"/>
+  <parent link="Support_large_v7_v3_7"/>
+  <child link="Motor_rds_v4_7"/>
+</joint>
+
+<joint name="Z5" type="continuous">
+  <origin xyz="0.032 0.779157 -0.299" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_7"/>
+  <child link="Wheel_v5_v4_17"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Rigid 73" type="fixed">
+  <origin xyz="0.694157 0.830657 -0.645" rpy="0 0 0"/>
+  <parent link="Motor_rds_v4_7"/>
+  <child link="Wheel_v5_v4_18"/>
+</joint>
+
+<joint name="Rigid 74" type="fixed">
+  <origin xyz="0.343 -0.714157 -0.005" rpy="0 0 0"/>
+  <parent link="Wheel_v5_v4_17"/>
+  <child link="Support_large_v2_9"/>
+</joint>
+
+<joint name="Rigid 75" type="fixed">
+  <origin xyz="-0.34075 0.030036 -0.374036" rpy="0 0 0"/>
+  <parent link="Support_large_v2_9"/>
+  <child link="Clamp_base_v1_1"/>
+</joint>
+
+<joint name="Rigid 88" type="fixed">
+  <origin xyz="-0.434414 0.690972 1.029968" rpy="0 0 0"/>
+  <parent link="Clamp_base_v1_1"/>
+  <child link="Claw_base2_v3_1"/>
+</joint>
+
+<joint name="Claw" type="continuous">
+  <origin xyz="0.41538 0.054935 -0.674818" rpy="0 0 0"/>
+  <parent link="Claw_base2_v3_1"/>
+  <child link="Wheel_v5_v4_19"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="Rigid 94" type="fixed">
+  <origin xyz="-0.010783 -0.698272 0.407786" rpy="0 0 0"/>
+  <parent link="Wheel_v5_v4_19"/>
+  <child link="Claw_p2_v2_1"/>
+</joint>
+
+<joint name="Rigid 95" type="fixed">
+  <origin xyz="-0.38091 0.501405 -1.105057" rpy="0 0 0"/>
+  <parent link="Claw_p2_v2_1"/>
+  <child link="Claw_finger2_v2_1"/>
+</joint>
+
+</robot>

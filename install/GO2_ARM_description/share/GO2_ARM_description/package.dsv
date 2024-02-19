@@ -1,0 +1,6 @@
+source;share/GO2_ARM_description/hook/pythonpath.ps1
+source;share/GO2_ARM_description/hook/pythonpath.dsv
+source;share/GO2_ARM_description/hook/pythonpath.sh
+source;share/GO2_ARM_description/hook/ament_prefix_path.ps1
+source;share/GO2_ARM_description/hook/ament_prefix_path.dsv
+source;share/GO2_ARM_description/hook/ament_prefix_path.sh

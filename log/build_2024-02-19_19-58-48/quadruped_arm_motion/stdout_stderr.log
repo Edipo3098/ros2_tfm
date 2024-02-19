@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info
+writing ../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info/PKG-INFO
+writing dependency_links to ../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info/dependency_links.txt
+writing entry points to ../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info/entry_points.txt
+writing requirements to ../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info/requires.txt
+writing top-level names to ../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info/top_level.txt
+writing manifest file '../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info/SOURCES.txt'
+reading manifest file '../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info/SOURCES.txt'
+writing manifest file '../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/edipo/ros2_tfm/build/quadruped_arm_motion/build
+creating /home/edipo/ros2_tfm/build/quadruped_arm_motion/build/lib
+creating /home/edipo/ros2_tfm/build/quadruped_arm_motion/build/lib/quadruped_arm_motion
+copying quadruped_arm_motion/motor_subscriber.py -> /home/edipo/ros2_tfm/build/quadruped_arm_motion/build/lib/quadruped_arm_motion
+copying quadruped_arm_motion/motor_control.py -> /home/edipo/ros2_tfm/build/quadruped_arm_motion/build/lib/quadruped_arm_motion
+copying quadruped_arm_motion/__init__.py -> /home/edipo/ros2_tfm/build/quadruped_arm_motion/build/lib/quadruped_arm_motion
+running install
+running install_lib
+creating /home/edipo/ros2_tfm/install/quadruped_arm_motion/lib/python3.10/site-packages/quadruped_arm_motion
+copying /home/edipo/ros2_tfm/build/quadruped_arm_motion/build/lib/quadruped_arm_motion/motor_subscriber.py -> /home/edipo/ros2_tfm/install/quadruped_arm_motion/lib/python3.10/site-packages/quadruped_arm_motion
+copying /home/edipo/ros2_tfm/build/quadruped_arm_motion/build/lib/quadruped_arm_motion/motor_control.py -> /home/edipo/ros2_tfm/install/quadruped_arm_motion/lib/python3.10/site-packages/quadruped_arm_motion
+copying /home/edipo/ros2_tfm/build/quadruped_arm_motion/build/lib/quadruped_arm_motion/__init__.py -> /home/edipo/ros2_tfm/install/quadruped_arm_motion/lib/python3.10/site-packages/quadruped_arm_motion
+byte-compiling /home/edipo/ros2_tfm/install/quadruped_arm_motion/lib/python3.10/site-packages/quadruped_arm_motion/motor_subscriber.py to motor_subscriber.cpython-310.pyc
+byte-compiling /home/edipo/ros2_tfm/install/quadruped_arm_motion/lib/python3.10/site-packages/quadruped_arm_motion/motor_control.py to motor_control.cpython-310.pyc
+byte-compiling /home/edipo/ros2_tfm/install/quadruped_arm_motion/lib/python3.10/site-packages/quadruped_arm_motion/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/edipo/ros2_tfm/install/quadruped_arm_motion/share/ament_index
+creating /home/edipo/ros2_tfm/install/quadruped_arm_motion/share/ament_index/resource_index
+creating /home/edipo/ros2_tfm/install/quadruped_arm_motion/share/ament_index/resource_index/packages
+copying resource/quadruped_arm_motion -> /home/edipo/ros2_tfm/install/quadruped_arm_motion/share/ament_index/resource_index/packages
+copying package.xml -> /home/edipo/ros2_tfm/install/quadruped_arm_motion/share/quadruped_arm_motion
+running install_egg_info
+Copying ../../build/quadruped_arm_motion/quadruped_arm_motion.egg-info to /home/edipo/ros2_tfm/install/quadruped_arm_motion/lib/python3.10/site-packages/quadruped_arm_motion-0.0.0-py3.10.egg-info
+running install_scripts
+Installing motor_control script to /home/edipo/ros2_tfm/install/quadruped_arm_motion/lib/quadruped_arm_motion
+Installing motor_subscriber script to /home/edipo/ros2_tfm/install/quadruped_arm_motion/lib/quadruped_arm_motion
+writing list of installed files to '/home/edipo/ros2_tfm/build/quadruped_arm_motion/install.log'

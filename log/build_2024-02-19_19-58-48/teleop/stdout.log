@@ -1,0 +1,53 @@
+running egg_info
+creating ../../build/teleop/teleop.egg-info
+writing ../../build/teleop/teleop.egg-info/PKG-INFO
+writing dependency_links to ../../build/teleop/teleop.egg-info/dependency_links.txt
+writing entry points to ../../build/teleop/teleop.egg-info/entry_points.txt
+writing requirements to ../../build/teleop/teleop.egg-info/requires.txt
+writing top-level names to ../../build/teleop/teleop.egg-info/top_level.txt
+writing manifest file '../../build/teleop/teleop.egg-info/SOURCES.txt'
+reading manifest file '../../build/teleop/teleop.egg-info/SOURCES.txt'
+writing manifest file '../../build/teleop/teleop.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/edipo/ros2_tfm/build/teleop/build
+creating /home/edipo/ros2_tfm/build/teleop/build/lib
+creating /home/edipo/ros2_tfm/build/teleop/build/lib/teleop_publisher
+copying teleop_publisher/teleop_Arm_publisher.py -> /home/edipo/ros2_tfm/build/teleop/build/lib/teleop_publisher
+copying teleop_publisher/__init__.py -> /home/edipo/ros2_tfm/build/teleop/build/lib/teleop_publisher
+creating /home/edipo/ros2_tfm/build/teleop/build/lib/teleop_publisher_gui
+copying teleop_publisher_gui/teleop_Arm_GUI.py -> /home/edipo/ros2_tfm/build/teleop/build/lib/teleop_publisher_gui
+copying teleop_publisher_gui/__init__.py -> /home/edipo/ros2_tfm/build/teleop/build/lib/teleop_publisher_gui
+creating /home/edipo/ros2_tfm/build/teleop/build/lib/teleop
+copying teleop/teleop_Arm.py -> /home/edipo/ros2_tfm/build/teleop/build/lib/teleop
+copying teleop/__init__.py -> /home/edipo/ros2_tfm/build/teleop/build/lib/teleop
+running install
+running install_lib
+creating /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop_publisher
+copying /home/edipo/ros2_tfm/build/teleop/build/lib/teleop_publisher/teleop_Arm_publisher.py -> /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop_publisher
+copying /home/edipo/ros2_tfm/build/teleop/build/lib/teleop_publisher/__init__.py -> /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop_publisher
+creating /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop_publisher_gui
+copying /home/edipo/ros2_tfm/build/teleop/build/lib/teleop_publisher_gui/teleop_Arm_GUI.py -> /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop_publisher_gui
+copying /home/edipo/ros2_tfm/build/teleop/build/lib/teleop_publisher_gui/__init__.py -> /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop_publisher_gui
+creating /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop
+copying /home/edipo/ros2_tfm/build/teleop/build/lib/teleop/teleop_Arm.py -> /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop
+copying /home/edipo/ros2_tfm/build/teleop/build/lib/teleop/__init__.py -> /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop
+byte-compiling /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop_publisher/teleop_Arm_publisher.py to teleop_Arm_publisher.cpython-310.pyc
+byte-compiling /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop_publisher/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop_publisher_gui/teleop_Arm_GUI.py to teleop_Arm_GUI.cpython-310.pyc
+byte-compiling /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop_publisher_gui/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop/teleop_Arm.py to teleop_Arm.cpython-310.pyc
+byte-compiling /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/edipo/ros2_tfm/install/teleop/share/ament_index
+creating /home/edipo/ros2_tfm/install/teleop/share/ament_index/resource_index
+creating /home/edipo/ros2_tfm/install/teleop/share/ament_index/resource_index/packages
+copying resource/teleop -> /home/edipo/ros2_tfm/install/teleop/share/ament_index/resource_index/packages
+copying package.xml -> /home/edipo/ros2_tfm/install/teleop/share/teleop
+running install_egg_info
+Copying ../../build/teleop/teleop.egg-info to /home/edipo/ros2_tfm/install/teleop/lib/python3.10/site-packages/teleop-0.0.0-py3.10.egg-info
+running install_scripts
+Installing teleop_Arm script to /home/edipo/ros2_tfm/install/teleop/lib/teleop
+Installing teleop_Arm_GUI script to /home/edipo/ros2_tfm/install/teleop/lib/teleop
+Installing teleop_Arm_publisher script to /home/edipo/ros2_tfm/install/teleop/lib/teleop
+writing list of installed files to '/home/edipo/ros2_tfm/build/teleop/install.log'

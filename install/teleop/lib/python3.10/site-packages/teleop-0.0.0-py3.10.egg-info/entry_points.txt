@@ -1,0 +1,5 @@
+[console_scripts]
+teleop_Arm = teleop.teleop_Arm:main
+teleop_Arm_GUI = teleop_publisher_gui.teleop_Arm_GUI:main
+teleop_Arm_publisher = teleop_publisher.teleop_Arm_publisher:main
+

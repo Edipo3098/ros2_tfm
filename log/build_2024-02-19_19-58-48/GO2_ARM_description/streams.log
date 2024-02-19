@@ -1,0 +1,82 @@
+[1.100s] Invoking command in '/home/edipo/ros2_tfm/src/GO2_ARM_description': PYTHONPATH=/home/edipo/ros2_tfm/build/GO2_ARM_description/prefix_override:/home/edipo/ros2_tfm/install/GO2_ARM_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/GO2_ARM_description build --build-base /home/edipo/ros2_tfm/build/GO2_ARM_description/build install --record /home/edipo/ros2_tfm/build/GO2_ARM_description/install.log --install-scripts $base/lib/GO2_ARM_description --single-version-externally-managed
+[1.284s] /home/edipo/.local/lib/python3.10/site-packages/setuptools/dist.py:717: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.284s]   warnings.warn(
+[1.308s] running egg_info
+[1.309s] creating ../../build/GO2_ARM_description/GO2_ARM_description.egg-info
+[1.309s] writing ../../build/GO2_ARM_description/GO2_ARM_description.egg-info/PKG-INFO
+[1.309s] writing dependency_links to ../../build/GO2_ARM_description/GO2_ARM_description.egg-info/dependency_links.txt
+[1.309s] writing entry points to ../../build/GO2_ARM_description/GO2_ARM_description.egg-info/entry_points.txt
+[1.309s] writing requirements to ../../build/GO2_ARM_description/GO2_ARM_description.egg-info/requires.txt
+[1.309s] writing top-level names to ../../build/GO2_ARM_description/GO2_ARM_description.egg-info/top_level.txt
+[1.309s] writing manifest file '../../build/GO2_ARM_description/GO2_ARM_description.egg-info/SOURCES.txt'
+[1.311s] reading manifest file '../../build/GO2_ARM_description/GO2_ARM_description.egg-info/SOURCES.txt'
+[1.312s] writing manifest file '../../build/GO2_ARM_description/GO2_ARM_description.egg-info/SOURCES.txt'
+[1.312s] running build
+[1.312s] running build_py
+[1.312s] creating /home/edipo/ros2_tfm/build/GO2_ARM_description/build
+[1.312s] creating /home/edipo/ros2_tfm/build/GO2_ARM_description/build/lib
+[1.312s] creating /home/edipo/ros2_tfm/build/GO2_ARM_description/build/lib/GO2_ARM_description
+[1.312s] copying GO2_ARM_description/__init__.py -> /home/edipo/ros2_tfm/build/GO2_ARM_description/build/lib/GO2_ARM_description
+[1.312s] running install
+[1.312s] running install_lib
+[1.313s] creating /home/edipo/ros2_tfm/install/GO2_ARM_description/lib/python3.10/site-packages/GO2_ARM_description
+[1.313s] copying /home/edipo/ros2_tfm/build/GO2_ARM_description/build/lib/GO2_ARM_description/__init__.py -> /home/edipo/ros2_tfm/install/GO2_ARM_description/lib/python3.10/site-packages/GO2_ARM_description
+[1.313s] byte-compiling /home/edipo/ros2_tfm/install/GO2_ARM_description/lib/python3.10/site-packages/GO2_ARM_description/__init__.py to __init__.cpython-310.pyc
+[1.313s] running install_data
+[1.314s] creating /home/edipo/ros2_tfm/install/GO2_ARM_description/share/ament_index
+[1.314s] creating /home/edipo/ros2_tfm/install/GO2_ARM_description/share/ament_index/resource_index
+[1.314s] creating /home/edipo/ros2_tfm/install/GO2_ARM_description/share/ament_index/resource_index/packages
+[1.314s] copying resource/GO2_ARM_description -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/ament_index/resource_index/packages
+[1.314s] copying package.xml -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description
+[1.314s] creating /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/launch
+[1.314s] copying launch/gazebo.launch.py -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/launch
+[1.314s] copying launch/display.launch.py -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/launch
+[1.314s] creating /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/urdf
+[1.315s] copying urdf/GO2_ARM.gazebo -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/urdf
+[1.315s] copying urdf/materials.xacro -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/urdf
+[1.315s] copying urdf/GO2_ARM.trans -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/urdf
+[1.315s] copying urdf/GO2_ARM.xacro -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/urdf
+[1.315s] creating /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.315s] copying meshes/Wheel_v5_v4_9.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.316s] copying meshes/pieza_perfil_v2_1.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.316s] copying meshes/Support_large_v2_1.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.316s] copying meshes/pieza_perfil_v2_4.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.317s] copying meshes/Support_large_v2_9.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.317s] copying meshes/pieza_perfil_v2_2.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.317s] copying meshes/Wheel_v5_v4_17.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.318s] copying meshes/Support_large_v2_8.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.318s] copying meshes/Support_large_v7_v3_5.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.319s] copying meshes/pieza_perfil_v2_5.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.319s] copying meshes/Wheel_v5_v4_18.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.319s] copying meshes/Wheel_v5_v4_10.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.319s] copying meshes/Wheel_v5_v4_15.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.320s] copying meshes/Support_large_v7_v3_6.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.320s] copying meshes/Soporte_motor_v2_1.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.321s] copying meshes/pieza_perfil_v2_3.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.321s] copying meshes/Wheel_v5_v4_2.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.321s] copying meshes/Claw_p2_v2_1.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.322s] copying meshes/Motor_rds_v4_5.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.323s] copying meshes/pieza_perfil_v2_6.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.323s] copying meshes/Claw_base2_v3_1.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.323s] copying meshes/Motor_rds_v4_1.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.325s] copying meshes/Wheel_v5_v4_16.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.325s] copying meshes/Support_large_v7_v3_1.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.325s] copying meshes/arm_250_v1_1.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.326s] copying meshes/base_link.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.327s] copying meshes/Pieza_rotational_v2_1.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.327s] copying meshes/Wheel_v5_v4_19.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.328s] copying meshes/Motor_rds_v4_6.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.329s] copying meshes/Clamp_base_v1_1.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.329s] copying meshes/Wheel_v5_v4_1.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.329s] copying meshes/Motor_rds_v4_7.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.331s] copying meshes/arm_300_v1_1.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.331s] copying meshes/Support_large_v7_v3_7.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.331s] copying meshes/Claw_finger2_v2_1.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.331s] copying meshes/Support_large_v2_5.stl -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/meshes
+[1.332s] creating /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/config
+[1.332s] copying config/display.rviz -> /home/edipo/ros2_tfm/install/GO2_ARM_description/share/GO2_ARM_description/config
+[1.332s] running install_egg_info
+[1.334s] Copying ../../build/GO2_ARM_description/GO2_ARM_description.egg-info to /home/edipo/ros2_tfm/install/GO2_ARM_description/lib/python3.10/site-packages/GO2_ARM_description-0.0.0-py3.10.egg-info
+[1.334s] running install_scripts
+[1.353s] writing list of installed files to '/home/edipo/ros2_tfm/build/GO2_ARM_description/install.log'
+[1.422s] Invoked command in '/home/edipo/ros2_tfm/src/GO2_ARM_description' returned '0': PYTHONPATH=/home/edipo/ros2_tfm/build/GO2_ARM_description/prefix_override:/home/edipo/ros2_tfm/install/GO2_ARM_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/GO2_ARM_description build --build-base /home/edipo/ros2_tfm/build/GO2_ARM_description/build install --record /home/edipo/ros2_tfm/build/GO2_ARM_description/install.log --install-scripts $base/lib/GO2_ARM_description --single-version-externally-managed

@@ -1,0 +1,40 @@
+running egg_info
+creating ../../build/mpu_pub/mpu_pub.egg-info
+writing ../../build/mpu_pub/mpu_pub.egg-info/PKG-INFO
+writing dependency_links to ../../build/mpu_pub/mpu_pub.egg-info/dependency_links.txt
+writing entry points to ../../build/mpu_pub/mpu_pub.egg-info/entry_points.txt
+writing requirements to ../../build/mpu_pub/mpu_pub.egg-info/requires.txt
+writing top-level names to ../../build/mpu_pub/mpu_pub.egg-info/top_level.txt
+writing manifest file '../../build/mpu_pub/mpu_pub.egg-info/SOURCES.txt'
+reading manifest file '../../build/mpu_pub/mpu_pub.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/mpu_pub/mpu_pub.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/edipo/ros2_tfm/build/mpu_pub/build
+creating /home/edipo/ros2_tfm/build/mpu_pub/build/lib
+creating /home/edipo/ros2_tfm/build/mpu_pub/build/lib/mpu_pub
+copying mpu_pub/__init__.py -> /home/edipo/ros2_tfm/build/mpu_pub/build/lib/mpu_pub
+copying mpu_pub/mpu_publisher.py -> /home/edipo/ros2_tfm/build/mpu_pub/build/lib/mpu_pub
+copying mpu_pub/mpu_subscriber.py -> /home/edipo/ros2_tfm/build/mpu_pub/build/lib/mpu_pub
+running install
+running install_lib
+creating /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub
+copying /home/edipo/ros2_tfm/build/mpu_pub/build/lib/mpu_pub/__init__.py -> /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub
+copying /home/edipo/ros2_tfm/build/mpu_pub/build/lib/mpu_pub/mpu_publisher.py -> /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub
+copying /home/edipo/ros2_tfm/build/mpu_pub/build/lib/mpu_pub/mpu_subscriber.py -> /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub
+byte-compiling /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub/mpu_publisher.py to mpu_publisher.cpython-310.pyc
+byte-compiling /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub/mpu_subscriber.py to mpu_subscriber.cpython-310.pyc
+running install_data
+creating /home/edipo/ros2_tfm/install/mpu_pub/share/ament_index
+creating /home/edipo/ros2_tfm/install/mpu_pub/share/ament_index/resource_index
+creating /home/edipo/ros2_tfm/install/mpu_pub/share/ament_index/resource_index/packages
+copying resource/mpu_pub -> /home/edipo/ros2_tfm/install/mpu_pub/share/ament_index/resource_index/packages
+copying package.xml -> /home/edipo/ros2_tfm/install/mpu_pub/share/mpu_pub
+running install_egg_info
+Copying ../../build/mpu_pub/mpu_pub.egg-info to /home/edipo/ros2_tfm/install/mpu_pub/lib/python3.10/site-packages/mpu_pub-0.0.0-py3.10.egg-info
+running install_scripts
+Installing mpu_publisher script to /home/edipo/ros2_tfm/install/mpu_pub/lib/mpu_pub
+Installing mpu_subscriber script to /home/edipo/ros2_tfm/install/mpu_pub/lib/mpu_pub
+writing list of installed files to '/home/edipo/ros2_tfm/build/mpu_pub/install.log'

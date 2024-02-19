@@ -1,0 +1,6 @@
+source;share/ARM_GO2_final_URDF_description/hook/pythonpath.ps1
+source;share/ARM_GO2_final_URDF_description/hook/pythonpath.dsv
+source;share/ARM_GO2_final_URDF_description/hook/pythonpath.sh
+source;share/ARM_GO2_final_URDF_description/hook/ament_prefix_path.ps1
+source;share/ARM_GO2_final_URDF_description/hook/ament_prefix_path.dsv
+source;share/ARM_GO2_final_URDF_description/hook/ament_prefix_path.sh

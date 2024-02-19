@@ -1,0 +1,48 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from robot_interfaces/msg/Anglemotor.msg
+// generated code does not contain a copyright notice
+
+
+module robot_interfaces {
+  module msg {
+    struct Anglemotor {
+      string message;
+
+      double p0z0;
+
+      double p0z1;
+
+      double p0z2;
+
+      double p1z0;
+
+      double p1z1;
+
+      double p1z2;
+
+      double p2z0;
+
+      double p2z1;
+
+      double p2z2;
+
+      double p3z0;
+
+      double p3z1;
+
+      double p3z2;
+
+      double armz0;
+
+      double armz1;
+
+      double armz2;
+
+      double armz3;
+
+      double armz4;
+
+      double gripper;
+    };
+  };
+};
